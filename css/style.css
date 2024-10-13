@@ -1,0 +1,666 @@
+@font-face {
+    font-family: "NBI";
+    src: url("../NBInternationalProBoo.woff2");
+}
+
+@font-face {
+    font-family: "Rejouice";
+    src: url("../Rejouice-Headline.woff2");
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf8f3;
+    font-family: var(--nbi);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --white: #fff;
+    --e0e0e0: #0E0E0E;
+    --rejouice: "Rejouice";
+    --nbi: "NBI";
+}
+
+#loader{
+    background-color: var(--e0e0e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+#loader h3{
+    font-size: 2vw;
+    color: var(--white);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+}
+#loader h3 span{
+    display: inline-block;
+    overflow: hidden;
+}
+/* ================ Header work start ==================== */
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: auto;
+    padding: 40px 35px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav a {
+    color: var(--white);
+    font-size: 21px;
+    font-weight: 300;
+}
+
+header nav button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 21px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+
+/* ================ Header work end ==================== */
+
+
+/* ================ Banner work start ==================== */
+
+.home-banner {
+    position: relative;
+    min-height: 100vh;
+    z-index: 11;
+}
+
+#cursor {
+    position: fixed;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0E0E90;
+    z-index: 10;
+}
+
+#cursor h5 {
+    cursor: default;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    font-family: var(--nbi);
+    color: var(--white);
+}
+
+.home-banner video {
+    height: 100%;
+    width: 100%;
+}
+
+.home-banner .banner-text {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.home-banner .banner-text h1 {
+    line-height: 0.9;
+    display: inline-block;
+    font-family: var(--rejouice);
+    font-weight: 550;
+    font-size: 420px;
+    color: var(--white);
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.home-banner .banner-text h1 span {
+    display: inline-block;
+}
+
+/* ================ Banner work end ==================== */
+
+
+/* ================ Page 2 work start ==================== */
+.page2 {
+    position: relative;
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+
+.page2 .heading-page-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    border-bottom: 1px solid var(--e0e0e0);
+    overflow: hidden;
+}
+
+.page2 .heading-page-2 p,
+.page4 .heading-page-4 p {
+    font-size: 25px;
+    color: var(--e0e0e0);
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.page2 .page-2-content,
+.page4 .page-4-content {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.page2 .page-2-content span,
+.page4 .page-4-content span {
+    overflow: hidden;
+    height: 68px;
+    display: inline-block;
+    font-size: 65px;
+    font-weight: 550;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* ================ Page 2 work end ==================== */
+
+
+/* ================ Page 3 work start ==================== */
+
+.page3 {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 50px 0;
+}
+
+.page3 .heading-page-3,
+.page3 .see-work {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.page3 .heading-page-3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    margin-bottom: 150px;
+    overflow: hidden;
+}
+
+.page3 .heading-page-3 p {
+    font-size: 15px;
+    color: var(--e0e0e0);
+    font-weight: 300;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.page3 .heading-page-3 p span {
+    padding: 5px 10px;
+    font-size: 9px;
+    background-color: var(--e0e0e0);
+    border-radius: 100px;
+    color: var(--white);
+}
+
+.page3 .heading-page-3 a {
+    display: inline-block;
+    line-height: 1;
+    height: 70px;
+    border-bottom: 2.5px solid var(--e0e0e0);
+    font-size: 65px;
+    color: var(--e0e0e0);
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.page3 .see-work .see-wokr-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 7px;
+}
+
+.page3 .see-work .see-wokr-head a,
+.page3 .see-work .see-wokr-head p {
+    font-size: 25px;
+    color: var(--e0e0e0);
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.page3 .see-work .images-part-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+}
+
+.page3 .see-work .images-part-3 .img-video {
+    width: calc(100% / 3 - 10px);
+    height: 545px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.page3 .see-work .images-part-3 .img-video img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.page3 .see-work .images-part-3 .img-video video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.page3 .see-work .images-part-3 .img-video:hover video {
+    opacity: 1;
+}
+
+/* ================ Page 3 work end ==================== */
+
+
+/* ================ Page 4 work start ==================== */
+.page4 {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+.page4 .heading-page-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid var(--e0e0e0);
+    opacity: 0.7;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.page4 .page-4-content span {
+    height: 75px;
+}
+
+/* ================ Page 4 work end ==================== */
+
+
+/* ================ Page 5 work start ==================== */
+.page5 {
+    padding: 10px 0 10px 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page5 video {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.page5 svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 39%;
+    height: auto;
+}
+
+.page5 .animation-circle-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
+    text-align: center;
+}
+
+.page5 .animation-circle-text .ani-head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 70px;
+    color: var(--white);
+    font-weight: 400;
+    height: 55px;
+}
+
+.page5 .animation-circle-text .ani-head-text h4 {
+    font-weight: 400;
+}
+
+.page5 .animation-circle-text>p {
+    font-size: 23px;
+    color: var(--white);
+    margin-left: -6px;
+}
+
+/* ================ Page 5 work end ==================== */
+
+
+/* ================ Page 6 work start ==================== */
+.page6 {
+    padding: 40px 0;
+    position: relative;
+}
+
+.page6 .get-in-touch {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--e0e0e0);
+    opacity: 0.9;
+    padding-bottom: 5px;
+}
+
+.page6 .get-in-touch h2 {
+    font-size: 140px;
+    font-family: var(--rejouice);
+    font-weight: 400;
+    color: var(--e0e0e0);
+    height: 138px;
+}
+
+.page6 .get-in-touch a {
+    font-size: 23px;
+    font-weight: 400;
+    color: var(--e0e0e0);
+    opacity: 0.8;
+    padding-bottom: 10px;
+}
+
+.page6 .swiperdiv {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+    width: 97%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%;
+}
+.swiper .swiper-wrapper{
+    align-items: flex-end;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ================ Page 6 work end ==================== */
+
+/* ================ About Work start =================== */
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 100px 0 250px 0;
+}
+
+.about .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about .about-text p {
+    font-size: 20px;
+    color: var(--e0e0e0);
+    font-weight: 300;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+.about .about-text a {
+    display: inline-block;
+    line-height: 1;
+    height: 75px;
+    padding-bottom: 20px;
+    border-bottom: 2.5px solid var(--e0e0e0);
+    font-size: 70px;
+    color: var(--e0e0e0);
+    font-weight: 400;
+    overflow: hidden;
+}
+
+/* ================ About Work end =================== */
+
+
+/* ================ Footer work start =================== */
+footer {
+    padding: 50px 0 0 0;
+    position: relative;
+    background-color: var(--e0e0e0);
+}
+
+footer nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--e0e0e0);
+    overflow: hidden;
+
+}
+
+footer nav .left-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer nav .left-nav h4 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+footer nav .left-nav a {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    color: var(--white);
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    transition: background-color 0.5s ease;
+}
+
+footer nav .left-nav a:hover {
+    background-color: var(--white);
+    color: var(--e0e0e0);
+}
+
+footer nav .right-nav {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+footer nav .right-nav .parts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+footer nav .right-nav .parts ul li a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    position: relative;
+}
+
+footer nav .right-nav .parts ul li a::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    will-change: transform;
+    transform: scaleX(0) translateZ(0);
+    transform-origin: 100% 0;
+    transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+footer nav .right-nav .parts ul li a:hover::before {
+    transform: scale(1) translateZ(0);
+    transform-origin: 0% 0%;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .logo h2{
+    line-height: 0.9;
+    display: inline-block;
+    font-family: var(--rejouice);
+    font-weight: 550;
+    font-size: 420px;
+    color: var(--white);
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+footer .logo h2 span{
+    display: inline-block;
+    overflow: hidden;
+
+}
+/* ================ Footer work end =================== */
